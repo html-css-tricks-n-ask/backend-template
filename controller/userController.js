@@ -1,5 +1,5 @@
 // userController.js
-import User from "../models/userModel.js";
+import User from "../src/models/userModel.js";
 
  const getUsers = async (req, res) => {
   try {
@@ -12,6 +12,8 @@ import User from "../models/userModel.js";
 
  const createUser = async (req, res) => {
   try {
+    
+    console.log("enterCreateuser")
     const { name, email } = req.body;
     const user = new User({ name, email });
     await user.save();
