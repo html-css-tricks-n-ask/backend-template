@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 });
 
 
-app.use("/createUser", createUser);
+app.post("/createUser", createUser);
 
 
 
