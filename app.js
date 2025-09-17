@@ -4,6 +4,7 @@ import userRoute from './routes/userRoute.js';
 
 const app = express();
 
+
 //  MiddleWare
 app.use(cors());
 app.use(express.json());
